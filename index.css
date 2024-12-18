@@ -53,38 +53,28 @@ p{
     cursor: pointer;
 }
 
-a{
-    color: #282828;
-    text-decoration: none;
+.nav-link{
+    color: #F8F7F4;
 }
 
-a:hover{
-    background: none;
-    text-decoration: none;
-    color: #731C41;
+.nav-link:hover{
+    text-decoration: underline;
+    color: #F8F7F4;
+}
+
+#logo{
+    width: 15rem;
+    height: 15rem;
 }
 
 .container{
-    display: flex;
-}
-
-.box1,
-.box2{
-    margin-top: 20rem;
-}
-
-.box1{
-    width: 10%;
-}
-
-.box2{
-    width: 80%;
+    margin-top: 10rem;
     text-align: center;
 }
 
 .footer{
     text-align: center;
-    height: 5rem;
+    height: 3rem;
     bottom: 0;
     position: fixed;
     width: 100%;
@@ -122,15 +112,6 @@ a:hover{
         width: 3rem !important;
         height: 3rem !important;
         margin-left: 1.5rem;
-    }
-
-    .box1{
-        width: 15%;
-    }
-
-    .box2{
-        margin-top: 10rem;
-        width: 70%;
     }
 
     h1{

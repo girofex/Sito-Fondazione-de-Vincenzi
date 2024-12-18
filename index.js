@@ -48,15 +48,6 @@ function switchMode() {
     var bodyElement = document.body;
     bodyElement.classList.toggle("background-mode");
 
-    //navmenu
-    var navbar = document.getElementById("nav");
-    navbar.classList.toggle("nav_menu-mode");
-
-    var dropdown = document.querySelector(".dropdown");
-    dropdown.classList.toggle("dropdown-mode");
-    var dropdownMenu = document.querySelector(".dropdown-menu");
-    dropdownMenu.classList.toggle("dropdown-menu-mode");
-
     //about box
     var ml3 = document.querySelector(".ml3");
     ml3.classList.toggle("ml3-mode");
