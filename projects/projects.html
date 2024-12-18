@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Projects</title>
+    <link rel="shortcut icon" href="../img/FT.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="../scrollbar.css">
+</head>
+
+<body>
+    <nav id="nav" class="nav_menu navbar-fixed-top navbar-inverse">
+        <div class="nav_container">
+            <ul class="nav navbar-nav">
+                <div class="nav_box1">
+                    <div class="logo" style="z-index: 1;  cursor: pointer">
+                        <img id="mode" src="../img/moon.png" alt="logo" style="width: 4rem; height: 4rem" onclick="switchMode()">
+                    </div>
+                </div>
+
+                <div class="nav_box2" onclick="handleButtonClick('../index.html', false)">
+                    FEDERICA
+                    <br>
+                    TAMERISCO
+                </div>
+
+                <div class="nav_box3"></div>
+
+                <div class="nav_box4 navbar-header">
+                    <li>
+                        <button type="button" class="btn" onclick="handleButtonClick('projects.html', false)">
+                            Projects
+                        </button>
+                    
+                        <button type="button" class="btn" onclick="handleButtonClick('../contacts/contacts.html', false)">
+                            Contacts
+                        </button>
+                    </li>
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" style="display: none">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </a>
+        
+                        <ul class="dropdown-menu">
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="../contacts/contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="big_container">
+        <div class="container">
+            <div class="box1"></div>
+            
+            <div class="box2">
+                <div class="project_box" onclick="handleButtonClick('../under_construction.html', true)"> 
+                    <h1>LUPUS IN FABULA</h1>
+                        <p style="text-align: center">(coming soon)</p>
+                                        
+                        <h2 style="text-align: center">
+                            <img id="wolf" src="../img/light wolf.png" style="width: 5rem">
+                        </h2>
+                                            
+                        <h2>Info:</h2>
+                            <p>Videogame based on the popular adventure game</p>
+    
+                        <h2>Skills:</h2>
+                            <img id="xml" src="../img/light xml.png" style="width: 4.5rem">
+                            <img id="java" src="../img/light java.png" style="width: 4.5rem">      
+    
+                        <h2>Roles:</h2>
+                            <p>Designer & Developer</p>
+                                            
+                        <h2>Collaborators:</h2>
+                            <p>Alessandro Simoni,
+                                <br>
+                                Andrea Franceschetti</p>
+                </div>
+
+                <div class="project_box" id="underdogs" style="margin-left: 3rem" onclick="handleButtonClick('https://github.com/girofex/Underdogs', true)">   
+                    <h1>UNDERDOGS</h1>
+                    <p style="text-align: center">2023</p>
+    
+                    <h2 style="text-align: center">
+                        <img id="ball" src="../img/light ball.png" style="width: 5rem">
+                    </h2>
+                            
+                    <h2>Info:</h2>
+                        <p>Website for soccer players looking for a team or viceversa</p>
+    
+                    <h2>Skills:</h2>
+                        <img id="php" src="../img/light php.png" style="width: 4.5rem">
+                        <img id="html" src="../img/light html.png" style="width: 4.5rem">
+                        <img id="css" src="../img/light css.png" style="width: 4.5rem">
+                        <img id="sql" src="../img/light sql.png" style="width: 4.5rem">
+                        <img id="js" src="../img/light js.png" style="width: 4.5rem">
+    
+                    <h2>Roles:</h2>
+                        <p>Designer & Developer</p>
+                            
+                    <h2>Collaborator:</h2>
+                        <p>Alessandro Simoni</p>
+                </div>
+            </div>
+    
+            <div class="box3">
+                <div class="top_button" onclick="GoTop()">
+                    <a href="#head">
+                        <img id="top" src="../img/light arrow.png" style="width: 5rem" alt="Go to the top">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="skill_box">
+            <h2 style="margin-top: 1rem; text-align: center">Other skills learned</h2>
+            <img id="cplusplus" src="../img/light c++.png" style="width: 4.5rem">
+            <img id="c" src="../img/light c.png" style="width: 4.5rem">
+            <img id="python" src="../img/light python.png" style="width: 4.5rem">
+        </div>
+
+        <img id="me" src="../img/me2 dark mode.png">
+    </div>
+
+    <div class="footer">
+        <p style="font-size: 1.5rem; padding: 1.5rem">Federica Tamerisco copyright @2024</p>
+    </div>
+
+    <script src="projects.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

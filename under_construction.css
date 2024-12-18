@@ -1,0 +1,31 @@
+body{
+    background: #3C096C;
+    color: #DFD6D0;
+}
+
+h1{
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor: default;
+}
+
+#me{
+    width: 25rem;
+    height: 25rem;
+    left: 50%;
+    bottom: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+    transform: translateX(-50%);
+}
+
+/* responsive */
+
+@media only screen and (max-width: 950px){
+    #me{
+        width: 15rem;
+        height: 15rem;
+    }
+}

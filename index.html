@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Home</title>
+    <link rel="shortcut icon" href="img/FT.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="scrollbar.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+</head>
+
+<body>
+    <nav id="nav" class="nav_menu navbar-fixed-top navbar-inverse">
+        <div class="nav_container">
+            <ul class="nav navbar-nav">
+                <div class="nav_box1">
+                    <div class="logo" style="z-index: 1;  cursor: pointer">
+                        <img id="mode" src="img/moon.png" alt="logo" style="width: 4rem; height: 4rem" onclick="switchMode()">
+                    </div>
+                </div>
+
+                <div class="nav_box2" onclick="handleButtonClick('index.html', false)">
+                    FEDERICA
+                    <br>
+                    TAMERISCO
+                </div>
+
+                <div class="nav_box3"></div>
+
+                <div class="nav_box4 navbar-header">
+                    <li>
+                        <button type="button" class="btn" onclick="handleButtonClick('projects/projects.html', false)">
+                            Projects
+                        </button>
+                    
+                        <button type="button" class="btn" onclick="handleButtonClick('contacts/contacts.html', false)">
+                            Contacts
+                        </button>
+                    </li>
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" style="display: none">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </a>
+        
+                        <ul class="dropdown-menu">
+                            <li><a href="projects/projects.html">Projects</a></li>
+                            <li><a href="contacts/contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="box1"></div>
+        
+        <div class="box2">
+            <h1 class="ml16">Hi, I'm Federica Tamerisco</h1>
+            <p style="font-size: 2.8rem">
+                I'm
+                <span id="years"></span>
+                and I'm currently an MSc student
+                <br>
+                in Data Science & Engineering - Artificial Intelligence
+                <br>
+                at the University of Genoa,
+                <br>
+                having achieved a Bachelor's Degree in CS.
+                <br>
+                I'm passionate about technology but
+                <br>
+                I also like to challenge myself on the visual aspects of my works
+            </p>
+
+            <div class="about">               
+                <div class="about_box" style="text-align: left">
+                    <h1>About me</h1>
+                    
+                    <h2><img id="pin" src="img/light pin.png" style="width: 3rem; margin-right: 0.2rem; margin-bottom: 0.5rem">Living in:</h2>
+                        <p>Finale Ligure, Italy</p>
+                    <h2><img id="lang" src="img/light language.png" style="width: 3rem; margin-right: 0.2rem; margin-bottom: 0.5rem">Languages spoken:</h2>
+                        <p>Italian and English</p>
+                    
+                    <button type="button" class="btn" style="width: 9.2rem; margin-top: 1rem; margin-bottom: 2rem" onclick="handleButtonClick('CV/FedericaTameriscoCVIt.pdf', true)">
+                        CV IT
+                    </button>
+                    
+                    <button type="button" class="btn" style="width: 9.2rem; margin-top: 4rem; margin-bottom: 5rem" onclick="handleButtonClick('CV/FedericaTameriscoCVEn.pdf', true)">
+                        CV ENG
+                    </button>
+                </div>
+                
+                <img id="me" src="img/me1 dark mode.png">
+            </div>
+
+            <div class="about">
+                <div class="about_box" style="text-align: left">
+                    <h1>Interests</h1>
+
+                    <h2><img id="music" src="img/light music.png" style="width: 3.5rem; margin-left: -0.6rem; margin-right: 0.1rem; margin-bottom: 0.5rem">Music</h2>
+                        <p style="width: 83%">
+                            I cannot live without it, so here's some tunes that make me feel...
+                        </p>
+
+                        <iframe src="https://open.spotify.com/embed/playlist/6VK1abdIeGseZxfgPnpoEd?utm_source=generator&theme=0"
+                            style="border-radius: 10px; width: 100%; height: 50rem; padding: 2.5rem 2.5rem 0"
+                            frameBorder="0" loading="lazy">
+                        </iframe>
+
+                    <h2 style="margin-top: 5rem"><img id="cinema" src="img/light cinema.png" style="width: 2.7rem; margin-right: 0.3rem; margin-bottom: 0.5rem">Cinema</h2>
+                    <p style="width: 83%">Some titles that have my heart: </p>
+
+                    <img id="friends" class="poster" src="img/friends.jpeg" style="margin-right: 2.5rem">
+                    <img id="age" class="poster" src="img/ageOfYouth.jpeg" style="margin-right: 2.5rem">
+                    <img id="gilmore" class="poster" src="img/gilmoreGirls.jpg">
+                    <br>
+                    <img id="howl" class="poster" src="img/howl.jpeg" style="margin-right: 2.5rem">
+                    <img id="tick" class="poster" src="img/tickTickBoom.jpeg" style="margin-right: 2.5rem">
+                    <img id="wild" class="poster" src="img/intoTheWild.jpeg">
+
+                    <h2 style="margin-top: 5rem"><img id="game" src="img/light game.png" style="width: 3rem; margin-right: 0.2rem; margin-bottom: 0.5rem">Videogames</h2>
+                    <p style="width: 85%">
+                        They made me forget about the world:
+                    </p>
+
+                    <img id="final" class="poster" src="img/finalFantasy.jpg" style="margin-right: 1rem">
+                    <img id="red" class="poster" src="img/redDeadRed.jpg" style="margin-right: 1rem">
+                    <img id="tomb" class="poster" src="img/tombRaider.jpg">
+                    
+                    <h2 style="margin-top: 5rem"><img id="coffee" src="img/light coffee.png" style="width: 3rem; margin-right: 0.2rem; margin-bottom: 0.5rem">Coffee</h2>
+                    <p style="width: 85%; margin-bottom: 5rem">
+                        A good caramel macchiato gets me a long way
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="box3">
+            <div class="top_button" onclick="GoTop()">
+                <a href="#head">
+                    <img id="top" src="img/light arrow.png" style="width: 5rem" alt="Go to the top">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p style="font-size: 1.5rem; padding: 1.5rem">Federica Tamerisco copyright @2024</p>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+</body>
+</html>

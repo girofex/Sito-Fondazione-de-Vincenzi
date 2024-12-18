@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+    <title>Contacts</title>
+    <link rel="shortcut icon" href="../img/FT.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="../scrollbar.css">
+</head>
+
+<body>
+    <nav id="nav" class="nav_menu navbar-fixed-top">
+        <div class="nav_container">
+            <ul class="nav navbar-nav">
+                <div class="nav_box1">
+                    <div class="logo" style="z-index: 1; cursor: pointer">
+                        <img id="mode" src="../img/moon.png" alt="logo" style="width: 4rem; height: 4rem" onclick="switchMode()">
+                    </div>
+                </div>
+
+                <div class="nav_box2" onclick="handleButtonClick('../index.html', false)">
+                    FEDERICA
+                    <br>
+                    TAMERISCO
+                </div>
+
+                <div class="nav_box3"></div>
+
+                <div class="nav_box4 navbar-header">
+                    <li>
+                        <button type="button" class="btn" onclick="handleButtonClick('../projects/projects.html', false)">
+                            Projects
+                        </button>
+                    
+                        <button type="button" class="btn" onclick="handleButtonClick('contacts.html', false)">
+                            Contacts
+                        </button>
+                    </li>
+
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" style="display: none">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </a>
+        
+                        <ul class="dropdown-menu">
+                            <li><a href="../projects/projects.html">Projects</a></li>
+                            <li><a href="contacts.html">Contacts</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="box1">
+            <img id="me" src="../img/me3 dark mode.png">
+        </div>
+        
+        <div class="box2">
+            <div class="contact_box">               
+                <h1>You can find me on</h1>
+
+                <h2 style="text-align: center">
+                    <img id="linkedin" src="../img/light linkedin.png" onclick="handleButtonClick('https://www.linkedin.com/in/federica-tamerisco-a3b3971bb/', true)">
+                    <img id="github" src="../img/light github.png" onclick="handleButtonClick('https://github.com/girofex/', true)">
+                </h2>
+                
+                <h2><img id="email" src="../img/light at.png" style="margin-bottom: 0.5rem; cursor: default">Email: </h2>
+                    <p>f.tamerisco@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="box3"></div>
+    </div>
+
+    <div class="footer">
+        <p style="font-size: 1.5rem; padding: 1.5rem">Federica Tamerisco copyright @2024</p>
+    </div>
+
+    <script src="contacts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
