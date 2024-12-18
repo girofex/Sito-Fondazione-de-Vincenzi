@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="it">
 
 <head>
     <title>Home</title>
@@ -7,54 +7,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="scrollbar.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 </head>
 
 <body>
-    <nav id="nav" class="nav_menu navbar-fixed-top navbar-inverse">
-        <div class="nav_container">
-            <ul class="nav navbar-nav">
-                <div class="nav_box1">
-                    <div class="logo" style="z-index: 1;  cursor: pointer">
-                        <img id="mode" src="img/moon.png" alt="logo" style="width: 4rem; height: 4rem" onclick="switchMode()">
-                    </div>
-                </div>
-
-                <div class="nav_box2" onclick="handleButtonClick('index.html', false)">
-                    FEDERICA
-                    <br>
-                    TAMERISCO
-                </div>
-
-                <div class="nav_box3"></div>
-
-                <div class="nav_box4 navbar-header">
-                    <li>
-                        <button type="button" class="btn" onclick="handleButtonClick('projects/projects.html', false)">
-                            Chi Siamo
-                        </button>
-                    
-                        <button type="button" class="btn" onclick="handleButtonClick('contacts/contacts.html', false)">
-                            Contatti
-                        </button>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img id="mode" src="img/moon.png" alt="logo" onclick="switchMode()">
+            </a>
+            
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-
-                    <div class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" style="display: none">
-                            <span class="glyphicon glyphicon-menu-hamburger"></span>
-                        </a>
-        
-                        <ul class="dropdown-menu">
-                            <li><a href="projects/projects.html">Projects</a></li>
-                            <li><a href="contacts/contacts.html">Contacts</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Chi Siamo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contatti</a>
+                    </li>
+                </ul>
+                
+                <span class="navbar-text" style="cursor: default">
+                    Con voi dal 2024
+                </span>
+            </div>
         </div>
     </nav>
 
@@ -62,35 +45,20 @@
         <div class="box1"></div>
         
         <div class="box2">
-            <h1 class="ml16">Fondazione De Vincenzi</h1>
-            <p style="font-size: 2.8rem">
-                I'm
-                <span id="years"></span>
-                and I'm currently an MSc student
-                <br>
-                in Data Science & Engineering - Artificial Intelligence
-                <br>
-                at the University of Genoa,
-                <br>
-                having achieved a Bachelor's Degree in CS.
-                <br>
-                I'm passionate about technology but
-                <br>
-                I also like to challenge myself on the visual aspects of my works
-            </p>
-        </div>
+            <h1 class="ml3">
+                Fondazione De Vincenzi
+            </h1>
 
-        <div class="box3">
-            <div class="top_button" onclick="GoTop()">
-                <a href="#head">
-                    <img id="top" src="img/light arrow.png" style="width: 5rem" alt="Go to the top">
-                </a>
-            </div>
+            <img id="top" src="img/logo.png" style="width: 30rem" alt="Go to the top">
+
+            <p style="font-size: 2.8rem">
+                Motto
+            </p>
         </div>
     </div>
 
     <div class="footer">
-        <p style="font-size: 1.5rem; padding: 1.5rem">Federica Tamerisco copyright @2024</p>
+        <p style="font-size: 1.5rem; padding: 1.5rem">Copyright @2024</p>
     </div>
 
     <script src="index.js"></script>
