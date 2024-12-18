@@ -158,35 +158,6 @@ a:hover{
     text-align: center;
 }
 
-.about{
-    padding: 2rem 5rem 0;
-    margin-top: 10rem;
-    display: flex;
-    background: #3d348b;
-    border-radius: 1rem;
-    cursor: default;
-    box-shadow: 0 0 1rem #0F0F25;
-}
-
-#me{
-    width: 35rem;
-    height: 35rem;
-    margin-top: 5rem;
-    margin-left: 13rem;
-}
-
-.poster{
-    width: 25rem;
-    height: 35rem;
-    border-radius: 10px;
-}
-
-#howl,
-#tick,
-#wild{
-    margin-top: 1rem;
-}
-
 .top_button{
     bottom: 7rem;
     right: 5rem;
@@ -263,29 +234,6 @@ a:hover{
 
 /* responsive */
 
-@media only screen and (max-width: 1200px){
-    #me{
-        margin-top: 20rem;
-    }
-
-    .poster{
-        width: 20rem;
-        height: 30rem;
-    }
-
-    #gilmore{
-        margin-top: 1rem;
-    }
-}
-
-@media only screen and (max-width: 990px){
-    #me{
-        width: 15rem;
-        height: 15rem;
-        margin-top: 34rem;
-    }
-}
-
 @media only screen and (max-width: 768px) {
     .nav_menu{
         height: 6rem;
@@ -331,66 +279,6 @@ a:hover{
 
     p{
         font-size: 1.3rem !important;
-    }
-
-    .about{
-        margin-top: 5rem;
-        padding: 2rem 0 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    h2{
-        font-size: 1.7rem;
-    }
-
-    .container > .box2 > .about > .about_box{
-        text-align: center !important;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .container > .box2 > .about > .about_box > .btn{
-        margin-top: 1rem !important;
-        margin-bottom: 0rem !important;
-        margin-left: 1.8rem;
-        font-size: 1.5rem;
-    }
-
-    #pin,
-    #lang,
-    #music,
-    #cinema,
-    #coffee,
-    #game{
-        width: 2rem !important;
-    }
-
-    #me{
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .poster{
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
-
-    #age,
-    #final,
-    #red,
-    #tomb{
-        margin-top: 1rem;
-    }
-
-    iframe{
-        width: 25rem !important;
-        height: 40rem !important;
     }
 
     .top_button{

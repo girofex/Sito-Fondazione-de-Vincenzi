@@ -158,28 +158,3 @@ function updateYears(){
 
 updateYears();
 setInterval(updateYears, 86400000);
-
-//
-//
-//
-//sound effect
-var buttonSound = new Audio();
-buttonSound.src = "raindrop.mp3";
-
-btn.forEach(function(button) {
-    button.addEventListener("click", function() {
-        buttonSound.play();
-    });
-});
-
-function handleButtonClick(destination, openInNewWindow) {
-    setTimeout(function() {
-        if(openInNewWindow){
-            if(destination)
-                window.open(destination, '_blank');
-        }
-        
-        else
-            window.location.href = destination;
-    }, 200);
-}
