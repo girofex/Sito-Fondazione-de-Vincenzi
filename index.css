@@ -5,9 +5,7 @@ body{
 }
 
 .navbar,
-h1,
-h2,
-.btn{
+h1{
     font-family: "Merriweather", serif;
     font-weight: 600;
     font-style: normal;
@@ -21,19 +19,23 @@ h2,
     cursor: default;
 }
 
-h2{
-    font-size: 2.5rem;
-}
-
+h2,
 p{
     font-family: "Lato", sans-serif;
-    font-weight: 400;
-    font-size: 2rem;
     cursor: default;
 }
 
+h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1rem;
+}
+
 .navbar,
-.dropdown-menu,
 .footer{
     background: #731C41;
 }
@@ -68,7 +70,7 @@ p{
 }
 
 .container{
-    margin-top: 10rem;
+    margin-top: 12rem;
     text-align: center;
 }
 
