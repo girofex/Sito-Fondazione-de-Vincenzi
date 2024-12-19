@@ -27,13 +27,13 @@ var themeMode = localStorage.getItem('theme');
 
 function switchMode() {
     if(mode.src.includes("moon.png")){
-        mode.src = "img/sun.png";
+        mode.src = "../img/sun.png";
         localStorage.setItem('theme', true);
 
         scrollbarThumbColor = "#C8E7FF";
         scrollbarThumbBorderColor = "#0F0F25";
     }else{
-        mode.src = "img/moon.png";
+        mode.src = "../img/moon.png";
         localStorage.setItem('theme', false);
 
         scrollbarThumbColor = "#731C41";

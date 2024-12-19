@@ -7,13 +7,13 @@ body{
 .navbar,
 h1{
     font-family: "Merriweather", serif;
-    font-weight: 600;
+    font-weight: 500;
     font-style: normal;
     color: #F8F7F4;
 }
 
 .ml3{
-    font-weight: 900;
+    font-weight: 600;
     font-size: 3.5em;
     color: #282828;
     cursor: default;
@@ -27,7 +27,7 @@ p{
 
 h2{
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 p{
@@ -45,13 +45,13 @@ p{
     padding: 1rem 1rem;
     text-decoration: none;
     width: 100%;
-    box-shadow: 0 0 1rem #0F0F25;
+    box-shadow: 0 0 1rem #282828;
     color: #F8F7F4;
 }
 
 #mode{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
 }
 
@@ -70,7 +70,7 @@ p{
 }
 
 .container{
-    margin-top: 12rem;
+    margin-top: 7rem;
     text-align: center;
 }
 
@@ -82,7 +82,7 @@ p{
     width: 100%;
     cursor: default;
     color: #F8F7F4;
-    box-shadow: 0 0 1rem #0F0F25;
+    box-shadow: 0 0 1rem #282828;
 }
 
 /*dark mode*/
@@ -103,28 +103,47 @@ p{
 
 @media only screen and (max-width: 768px) {
     .navbar{
-        height: 6rem;
-    }
-
-    .logo{
-        margin-top: -2.2rem;
+        height: 3rem;
     }
     
     #mode{
-        width: 3rem !important;
-        height: 3rem !important;
-        margin-left: 1.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: -0.2rem;
+        margin-left: -1rem;
     }
 
-    h1{
-        font-size: 1.8rem;
+    .ml3{
+        font-size: 2rem;
+    }
+
+    #logo{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .nav-link,
+    .navbar-text{
+        font-size: 0.6rem;
+    }
+
+    #home{
+        margin-left: -0.8rem;
+    }
+
+    .navbar-text{
+        margin-right: -1rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
     }
 
     p{
-        font-size: 1.3rem !important;
+        font-size: 1rem;
     }
 
     .footer > p{
-        font-size: 1rem !important;
+        font-size: 0.8rem;
     }
 }
