@@ -1,60 +1,37 @@
-//name animation
-var textWrapper = document.querySelector('.ml3');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-anime.timeline()
-    .add({
-        targets: '.ml3 .letter',
-        opacity: [0, 1],
-        easing: "easeInOutQuad",
-        duration: 1000,
-        delay: (el, i) => 75 * (i + 1)
-    });
-
-//
-//
-//
 //light and dark mode
-var scrollbarTrackColor = "transparent";
-var scrollbarThumbColor = "#731C41";
-var scrollbarThumbBorderColor = "#F8F7F4";
-document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
-document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
-document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
-
-var mode = document.getElementById("mode");
+// var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
+var phone = document.getElementById("phone");
+var mail = document.getElementById("mail");
+var iban = document.getElementById("iban");
 
 function switchMode() {
     if(mode.src.includes("moon.png")){
         mode.src = "../img/sun.png";
         localStorage.setItem('theme', true);
 
-        scrollbarThumbColor = "#C8E7FF";
-        scrollbarThumbBorderColor = "#0F0F25";
+        phone.src = "../img/phone_white.png";
+        mail.src = "../img/mail_white.png";
+        iban.src = "../img/iban_white.png";
     }else{
         mode.src = "../img/moon.png";
         localStorage.setItem('theme', false);
 
-        scrollbarThumbColor = "#731C41";
-        scrollbarThumbBorderColor = "#F8F7F4";
+        phone.src = "../img/phone_black.png";
+        mail.src = "../img/mail_black.png";
+        iban.src = "../img/iban_black.png";
     }
 
-    document.documentElement.style.setProperty("--scrollbar-track-color", scrollbarTrackColor);
-    document.documentElement.style.setProperty("--scrollbar-thumb-color", scrollbarThumbColor);
-    document.documentElement.style.setProperty("--scrollbar-thumb-border-color", scrollbarThumbBorderColor);
-    
     //body
     var bodyElement = document.body;
     bodyElement.classList.toggle("background-mode");
 
-    //about box
-    var ml3 = document.querySelector(".ml3");
-    ml3.classList.toggle("ml3-mode");
+    //box
+    var contacts = document.querySelector("contacts");
+    contacts.classList.toggle("contacts-mode");
 
-    //footer
-    var footer = document.querySelector(".footer");
-    footer.classList.toggle("footer-mode");
+    var link = document.querySelector("link_email");
+    link.classList.toggle("link-mode");
 }
 
 if(themeMode == "true"){

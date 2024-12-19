@@ -1,13 +1,11 @@
 body::-webkit-scrollbar {
-  width: 1rem;
+  background: transparent;
 }
 
 body::-webkit-scrollbar-track {
-  background: var(--scrollbar-track-color);
+  background: transparent;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--scrollbar-thumb-color);
-  border-radius: 20px;
-  border: 0.2rem solid var(--scrollbar-thumb-border-color);
+  background-color: #731C41;
 }
