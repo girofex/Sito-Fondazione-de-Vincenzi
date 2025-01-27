@@ -1,9 +1,9 @@
 //light and dark mode
-// var mode = document.getElementById("mode");
+var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
 var phone = document.getElementById("phone");
 var mail = document.getElementById("mail");
-var iban = document.getElementById("iban");
+var info = document.getElementById("info");
 
 function switchMode() {
     if(mode.src.includes("moon.png")){
@@ -12,14 +12,14 @@ function switchMode() {
 
         phone.src = "../img/phone_white.png";
         mail.src = "../img/mail_white.png";
-        iban.src = "../img/iban_white.png";
+        info.src = "../img/info_white.png";
     }else{
         mode.src = "../img/moon.png";
         localStorage.setItem('theme', false);
 
         phone.src = "../img/phone_black.png";
         mail.src = "../img/mail_black.png";
-        iban.src = "../img/iban_black.png";
+        info.src = "../img/info_black.png";
     }
 
     //body

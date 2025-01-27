@@ -35,8 +35,7 @@ p{
     font-size: 1rem;
 }
 
-.navbar,
-.footer{
+.navbar{
     background: #731C41;
 }
 
@@ -72,17 +71,6 @@ p{
 .container{
     margin-top: 7rem;
     text-align: center;
-}
-
-.footer{
-    text-align: center;
-    height: 3rem;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    cursor: default;
-    color: #F8F7F4;
-    box-shadow: 0 0 1rem #282828;
 }
 
 /*dark mode*/
@@ -141,9 +129,5 @@ p{
 
     p{
         font-size: 1rem;
-    }
-
-    .footer > p{
-        font-size: 0.8rem;
     }
 }
