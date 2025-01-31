@@ -20,19 +20,21 @@ h1{
 }
 
 h2,
+h3
 p{
     font-family: "Lato", sans-serif;
     cursor: default;
 }
 
-h2{
+h2,
+h3{
     font-size: 2.5rem;
     font-weight: 400;
 }
 
 p{
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .navbar{
@@ -71,6 +73,12 @@ p{
 .container{
     margin-top: 7rem;
     text-align: center;
+}
+
+#carousel{
+    top: 10rem;
+    width: 80rem;
+    margin: auto;
 }
 
 /*dark mode*/
@@ -127,7 +135,17 @@ p{
         font-size: 1.5rem;
     }
 
+    h3{
+        font-size: 1.2rem;
+    }
+
     p{
         font-size: 1rem;
+    }
+
+    #carousel{
+        top: 5rem;
+        width: 20rem;
+        margin: auto;
     }
 }
