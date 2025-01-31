@@ -1,4 +1,4 @@
-//name animation
+//animazione nome
 var textWrapper = document.querySelector('.ml3');
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
@@ -11,10 +11,7 @@ anime.timeline()
         delay: (el, i) => 75 * (i + 1)
     });
 
-//
-//
-//
-//light and dark mode
+//tema chiaro e scuro
 var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
 
@@ -27,11 +24,9 @@ function switchMode() {
         localStorage.setItem('theme', false);
     }
 
-    //body
     var bodyElement = document.body;
     bodyElement.classList.toggle("background-mode");
 
-    //about box
     var ml3 = document.querySelector(".ml3");
     ml3.classList.toggle("ml3-mode");
 }

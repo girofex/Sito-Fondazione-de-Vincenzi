@@ -1,4 +1,4 @@
-//light and dark mode
+//tema chiaro e scuro
 var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
 var phone = document.getElementById("phone");

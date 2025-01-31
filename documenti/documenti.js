@@ -1,4 +1,4 @@
-//light and dark mode
+//tema chiaro e scuro
 var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
 
@@ -18,4 +18,15 @@ function switchMode() {
 
 if(themeMode == "true"){
     switchMode();
+}
+
+//per aprire pdf
+function handleButtonClick(destination, openInNewWindow) {
+    if(openInNewWindow){
+        if(destination)
+            window.open(destination, '_blank');
+    }
+        
+    else
+        window.location.href = destination;
 }

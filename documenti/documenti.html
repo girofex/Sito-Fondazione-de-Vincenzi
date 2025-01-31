@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg sticky-top navbar-expand">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <img id="mode" src="../img/moon.png" alt="logo" onclick="switchMode()">
+                <img id="mode" src="../img/moon.png" alt="Tema" onclick="switchMode()">
             </a>
             
             <ul class="navbar-nav me-auto">
@@ -39,42 +39,30 @@
         </div>
     </nav>
 
-    <div class="container text-center">
+    <div class="container">
         <div class="row">
-            <div class="col">
-                <a href="Attribuzione Codice Fiscale.pdf">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Attribuzione Codice Fiscale</h5>
-                        </div>
-                    </div>
-                </a>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-light w-100" onclick="handleButtonClick('docs/Attribuzione Codice Fiscale.pdf', true)">
+                    <img src="../img/doc1.png" class="card-img" alt="Attribuzione Codice Fiscale">
+                    <h3 class="card-title">Attribuzione Codice Fiscale</h3>
+                </button>
             </div>
 
-            <div class="col">
-                <a href="Attribuzione Codice Fiscale.pdf">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Attribuzione Codice Fiscale</h5>
-                        </div>
-                    </div>
-                </a>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-light w-100" onclick="handleButtonClick('docs/Iscrizione RUNTS.pdf', true)">
+                    <img src="../img/doc2.png" class="card-img" alt="Iscrizione RUNTS">
+                    <h3 class="card-title">Iscrizione RUNTS</h3>
+                </button>
             </div>
 
-            <div class="col">
-                <a href="Attribuzione Codice Fiscale.pdf">
-                    <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="card-title">Attribuzione Codice Fiscale</h5>
-                        </div>
-                    </div>
-                </a>
+            <div class="col-md-4">
+                <button type="button" class="btn btn-light w-100" onclick="handleButtonClick('docs/Statuto Fondazione.pdf', true)">
+                    <img src="../img/doc3.png" class="card-img" alt="Statuto Fondazione">
+                    <h3 class="card-title">Statuto Fondazione</h3>
+                </button>
             </div>
         </div>
-    </div>
+    </div>      
 
     <script src="documenti.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
