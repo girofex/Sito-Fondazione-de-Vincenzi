@@ -4,31 +4,32 @@ body{
     transition: 0.3s;
 }
 
-.navbar,
-h3{
+.navbar{
     font-family: "Merriweather", serif;
     font-weight: 500;
     font-style: normal;
 }
 
+h3,
 p{
-    font-family: "Lato", sans-serif;
     cursor: default;
 }
 
 h3{
+    font-family: "Merriweather", serif;
     font-size: 1.5rem;
     font-weight: 600;
     color: #F8F7F4;
 }
 
 p{
+    font-family: "Lato", sans-serif;
     font-weight: 400;
     font-size: 1rem;
 }
 
 .navbar{
-    background: #731C41;
+    background: #1B7B82;
     margin-top: 0;
     padding: 1rem 1rem;
     text-decoration: none;
@@ -53,27 +54,25 @@ p{
 }
 
 .container{
-    margin-top: 7rem;
+    margin: 4rem auto;
     text-align: center;
-    width: 50%;
-    margin: 10rem auto;
 }
   
 .btn{
-    border: none;
+    width: 20rem !important;
+    height: 30rem !important;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
-    outline: none;
     border-radius: 0.185rem;
-    padding: 2rem 2rem;
-    background-color: #731C41;
-    border: 0.185rem solid transparent;
-    transition: .3s;
+    padding: 2rem;
+    background-color: #2BC8AC;
+    border: 0.185rem solid #19A893;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
 }
 
 .btn:hover{
-    background-color: #731C41;
+    background-color: #19A893;
     border: none;
-    box-shadow: 0.5rem 0.5rem #282828;
+    box-shadow: 0.5rem 0.5rem #1B7B82;
     transition: .3s;
 }
 
@@ -88,7 +87,6 @@ p{
 
 .card-title{
     margin-top: 2rem;
-    color: #282828;
 }
 
 /*dark mode*/
@@ -105,7 +103,7 @@ p{
 
 /* responsive */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
     .navbar{
         height: 3rem;
     }
@@ -143,34 +141,13 @@ p{
         font-size: 1rem;
     }
 
+    .container{
+        display: flex;
+    }
+
     .btn{
         height: 18rem;
         width: 13rem;
         margin: auto;
-    }
-
-    .btn1{
-        margin-top: -8rem;
-    }
-
-    .btn2,
-    .btn3{
-        margin-top: 1.5rem;
-    }
-
-    .btn img{
-        height: 12rem;
-        width: 9rem;
-        margin-top: -1rem;
-        margin-left: -1rem;
-    }
-
-    .btn1 > .card-title{
-        margin-top: 0.7rem;
-    }
-
-    .btn2 > .card-title,
-    .btn3 > .card-title{
-        margin-top: 1.2rem;
     }
 }
