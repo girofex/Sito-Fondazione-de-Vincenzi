@@ -26,11 +26,11 @@ function switchMode() {
     var bodyElement = document.body;
     bodyElement.classList.toggle("background-mode");
 
-    //box
-    var contacts = document.querySelector("contacts");
+    //contatti
+    var contacts = document.querySelector(".contacts");
     contacts.classList.toggle("contacts-mode");
 
-    var link = document.querySelector("link_email");
+    var link = document.querySelector(".link_email");
     link.classList.toggle("link-mode");
 }
 

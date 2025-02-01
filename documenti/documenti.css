@@ -58,10 +58,37 @@ p{
     width: 50%;
     margin: 10rem auto;
 }
-
+  
 .btn{
-    height: 25rem;
-    background: #731C41;
+    border: none;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    outline: none;
+    border-radius: 0.185rem;
+    padding: 2rem 2rem;
+    background-color: #731C41;
+    border: 0.185rem solid transparent;
+    transition: .3s;
+}
+
+.btn:hover{
+    background-color: #731C41;
+    border: none;
+    box-shadow: 0.5rem 0.5rem #282828;
+    transition: .3s;
+}
+
+.btn > .card-title{
+    color: #F8F7F4;
+}
+
+.btn img{
+    width: 100%;
+    height: 20rem;
+}
+
+.card-title{
+    margin-top: 2rem;
+    color: #282828;
 }
 
 /*dark mode*/
@@ -69,6 +96,11 @@ p{
     background: #282828;
     color: #F8F7F4;
     transition: 0.3s;
+}
+
+.btn-mode:hover{
+    box-shadow: 0.5rem 0.5rem #F8F7F4;
+    transition: .3s;
 }
 
 /* responsive */
@@ -104,10 +136,41 @@ p{
     }
 
     h3{
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     p{
         font-size: 1rem;
+    }
+
+    .btn{
+        height: 18rem;
+        width: 13rem;
+        margin: auto;
+    }
+
+    .btn1{
+        margin-top: -8rem;
+    }
+
+    .btn2,
+    .btn3{
+        margin-top: 1.5rem;
+    }
+
+    .btn img{
+        height: 12rem;
+        width: 9rem;
+        margin-top: -1rem;
+        margin-left: -1rem;
+    }
+
+    .btn1 > .card-title{
+        margin-top: 0.7rem;
+    }
+
+    .btn2 > .card-title,
+    .btn3 > .card-title{
+        margin-top: 1.2rem;
     }
 }

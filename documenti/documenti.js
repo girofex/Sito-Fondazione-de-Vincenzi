@@ -1,6 +1,7 @@
 //tema chiaro e scuro
 var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
+var btn = document.querySelectorAll(".btn");
 
 function switchMode() {
     if(mode.src.includes("moon.png")){
@@ -14,6 +15,11 @@ function switchMode() {
     //body
     var bodyElement = document.body;
     bodyElement.classList.toggle("background-mode");
+
+    //bottoni
+    btn.forEach(function(btn) {
+        btn.classList.toggle("btn-mode");
+    });
 }
 
 if(themeMode == "true"){

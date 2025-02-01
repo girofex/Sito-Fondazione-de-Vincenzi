@@ -145,7 +145,11 @@ p{
 
     #carousel{
         top: 5rem;
-        width: 20rem;
+        width: 25rem;
         margin: auto;
+    }
+
+    #carousel img{
+        height: 25rem;
     }
 }
