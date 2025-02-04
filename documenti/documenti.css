@@ -71,7 +71,7 @@ p{
 }
 
 .btn:hover{
-    background-color: #1B7B82;
+background-color: #1B7B82;
     box-shadow: 0.5rem 0.5rem #2BC8AC;
     transition: .3s;
 }

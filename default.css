@@ -13,10 +13,14 @@ h1{
 }
 
 .ml3{
-    font-weight: 600;
+    margin-top: 10rem;
     font-size: 3.5em;
-    color: #282828;
     cursor: default;
+}
+
+.name{
+    font-weight: 600;
+    color: #282828;
 }
 
 h2,
@@ -40,13 +44,10 @@ p{
 
 .navbar{
     background: #1B7B82;
-}
-
-.navbar{
-    margin-top: 0;
+    margin: 1rem auto;
     padding: 1rem 1rem;
     text-decoration: none;
-    width: 100%;
+    width: 50%;
     box-shadow: 0 0 1rem #282828;
     color: #F8F7F4;
 }
@@ -71,20 +72,37 @@ p{
     height: 15rem;
 }
 
-.container{
-    margin-top: 7rem;
+.presentation{
+    top: 0;
+    position: absolute;
+    right: 0;
+}
+
+.flex-fill{
+    width: 50%;
     text-align: center;
 }
 
-#carousel{
-    top: 5rem;
-    width: 50rem;
-    margin: auto;
+#mani{
+    height: 120%;
 }
 
-.carousel-caption{
-    font-family: "Merryweather", serif;
-    cursor: default;
+.description{
+    margin-top: 45rem;
+    background: #19A893;
+    color: #F8F7F4;
+    width: 100%;
+    height: 30rem;
+    text-align: center;
+}
+
+.who{
+    font-weight: 400;
+}
+
+.who,
+.description p{
+    margin-top: 2rem;
 }
 
 /*dark mode*/
@@ -102,7 +120,13 @@ p{
 
 @media only screen and (max-width: 768px) {
     .navbar{
+        margin-top: 0;
+        width: 100%;
         height: 3rem;
+    }
+
+    .navbar-nav{
+        margin-right: -1rem;
     }
     
     #mode{
@@ -121,17 +145,12 @@ p{
         height: 10rem;
     }
 
-    .nav-link,
-    .navbar-text{
+    .nav-link{
         font-size: 0.6rem;
     }
 
     #home{
         margin-left: -0.8rem;
-    }
-
-    .navbar-text{
-        margin-right: -1rem;
     }
 
     h2{
@@ -144,15 +163,5 @@ p{
 
     p{
         font-size: 1rem;
-    }
-
-    #carousel{
-        top: 5rem;
-        width: 25rem;
-        margin: auto;
-    }
-
-    #carousel img{
-        height: 25rem;
     }
 }

@@ -21,7 +21,7 @@
                 <img id="mode" src="img/moon.png" alt="Tema" onclick="switchMode()">
             </a>
             
-            <ul class="navbar-nav me-auto">
+            <ul class="navbar-nav justify-content-end">
                 <li class="nav-item" id="home">
                     <a class="nav-link" href="#">Home</a>
                 </li>
@@ -32,65 +32,27 @@
                     <a class="nav-link" href="./contatti/contatti.html">Contatti</a>
                 </li>
             </ul>
-                
-            <span class="navbar-text" style="cursor: default">
-                Con voi dal 2024
-            </span>
         </div>
     </nav>
 
-    <div class="container">
-        <h1 class="ml3">
-            Fondazione De Vincenzi
-        </h1>
+    <div class="presentation container-fluid d-flex flex-column flex-lg-row">
+        <div class="flex-fill p-0" style="padding: 2rem">
+            <h1 class="ml3 name">Fondazione De Vincenzi</h1>
+            <img id="logo" src="img/logo.png" alt="Logo" class="img-fluid">
+            <h2>Motto</h2>
+        </div>
 
-        <img id="logo" src="img/logo.png" alt="Logo">
-
-        <h2>
-            Motto
-        </h2>
+        <div class="flex-fill p-0">
+            <img id="mani" src="img/mani.jpg" alt="Mani" class="img-fluid">
+        </div>
     </div>
 
-    <div id="carousel" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/cuore.jpg" class="d-block w-100" alt="Cuore">
-                <div class="carousel-caption d-md-block">
-                    <h3>Chi siamo</h3>
-                    <p>Breve descrizione</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/bussola.jpg" class="d-block w-100" alt="Bussola">
-                <div class="carousel-caption d-md-block">
-                    <h3>Cosa facciamo</h3>
-                    <p>Breve descrizione</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img src="img/mani.jpg" class="d-block w-100" alt="Mani">
-                <div class="carousel-caption d-md-block">
-                    <h3>I nostri obiettivi</h3>
-                    <p>Breve descrizione</p>
-                </div>
-            </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Prima</span>
-        </button>
+    <div class="description">
+        <h1 class="ml3 who">Chi Siamo</h1>
         
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Dopo</span>
-        </button>
+        <p>
+            ...
+        </p>
     </div>
 
     <script src="default.js"></script>
