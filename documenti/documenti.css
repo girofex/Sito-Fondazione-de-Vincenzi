@@ -58,21 +58,21 @@ p{
     text-align: center;
 }
   
-.btn{
+.btn,
+.btn:active,
+.btn:focus{
     width: 20rem !important;
-    height: 30rem !important;
+    height: 29rem !important;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
-    border-radius: 0.185rem;
     padding: 2rem;
-    background-color: #2BC8AC;
-    border: 0.185rem solid #19A893;
+    background-color: #19A893;
+    border: none;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
 }
 
 .btn:hover{
-    background-color: #19A893;
-    border: none;
-    box-shadow: 0.5rem 0.5rem #1B7B82;
+    background-color: #1B7B82;
+    box-shadow: 0.5rem 0.5rem #2BC8AC;
     transition: .3s;
 }
 
