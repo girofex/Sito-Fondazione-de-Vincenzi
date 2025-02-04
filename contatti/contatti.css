@@ -73,7 +73,7 @@ p{
     background-color: #F8F7F4;
 }
 
-#telefono,
+#iban,
 #email,
 #info{
     width: 2rem;
@@ -134,7 +134,7 @@ p{
         width: 100%;
     }
 
-    #telefono,
+    #iban,
     #email,
     #info{
         width: 1rem;
