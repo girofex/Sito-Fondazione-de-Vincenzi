@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg sticky-top navbar-expand">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <img id="mode" src="img/moon.png" alt="Tema" onclick="switchMode()">
+                <img id="mode" src="img/luna.png" alt="Tema" onclick="switchMode()">
             </a>
             
             <ul class="navbar-nav justify-content-end">
@@ -36,23 +36,89 @@
     </nav>
 
     <div class="presentation container-fluid d-flex flex-column flex-lg-row">
-        <div class="flex-fill p-0" style="padding: 2rem">
-            <h1 class="ml3 name">Fondazione De Vincenzi</h1>
-            <img id="logo" src="img/logo.png" alt="Logo" class="img-fluid">
-            <h2>Motto</h2>
+        <div class="flex-fill">
+            <h1 class="ml3 name" style="padding: 3rem">Fondazione De Vincenzi</h1>
+            <h2>Con voi dal 2024</h2>
         </div>
 
-        <div class="flex-fill p-0">
+        <div class="flex-fill">
             <img id="mani" src="img/mani.jpg" alt="Mani" class="img-fluid">
         </div>
     </div>
 
+    <img id="logo" src="img/logo.png" alt="Logo">
+
     <div class="description">
-        <h1 class="ml3 who">Chi Siamo</h1>
+        <h1 class="who" style="color: #F8F7F4">Aiutiamo la salute</h1>
         
-        <p>
-            ...
-        </p>
+        <img id="cuore" src="img/cuore.jpg" alt="Cuore">
+
+        <hr>
+
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="acc" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                            <span class="number">01</span>
+                            Chi siamo
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="acc" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                            <span class="number">02</span>
+                            Cosa facciamo
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a class="acc" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                            <span class="number">03</span>
+                            I nostri obiettivi
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                    </div>
+                </div>
+            </div>
+            
+            <hr>
+        </div>
     </div>
 
     <script src="default.js"></script>

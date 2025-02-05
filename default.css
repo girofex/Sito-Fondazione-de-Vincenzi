@@ -1,6 +1,6 @@
 body{
     background: #F8F7F4;
-    color: #282828;
+    text-align: center;
     transition: 0.3s;
 }
 
@@ -9,20 +9,25 @@ h1{
     font-family: "Merriweather", serif;
     font-weight: 500;
     font-style: normal;
-    color: #F8F7F4;
+    color: #282828;
+}
+
+.ml3,
+.who{
+    cursor: default;
 }
 
 .ml3{
-    margin-top: 10rem;
     font-size: 3.5em;
-    cursor: default;
+    margin-top: 10rem;
 }
 
 .name{
     font-weight: 600;
-    color: #282828;
+    color: #F8F7F4;
 }
 
+h1,
 h2,
 h3
 p{
@@ -43,33 +48,30 @@ p{
 }
 
 .navbar{
-    background: #1B7B82;
+    background: #F8F7F4;
     margin: 1rem auto;
     padding: 1rem 1rem;
     text-decoration: none;
+    height: 3rem;
     width: 50%;
     box-shadow: 0 0 1rem #282828;
-    color: #F8F7F4;
+    color: #282828;
 }
 
 #mode{
-    width: 2rem;
-    height: 2rem;
+    margin-left: -0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
     cursor: pointer;
 }
 
 .nav-link{
-    color: #F8F7F4;
+    color: #282828;
 }
 
 .nav-link:hover{
     text-decoration: underline;
-    color: #F8F7F4;
-}
-
-#logo{
-    width: 15rem;
-    height: 15rem;
+    color: #282828;
 }
 
 .presentation{
@@ -80,29 +82,65 @@ p{
 
 .flex-fill{
     width: 50%;
-    text-align: center;
+    height: 38rem;
+    background: #1B7B82;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
 }
 
 #mani{
-    height: 120%;
+    height: 38rem;
+}
+
+#logo{
+    margin-top: 35rem;
+    width: 15rem;
+    height: 15rem;
 }
 
 .description{
-    margin-top: 45rem;
+    margin-top: 5rem;
     background: #19A893;
     color: #F8F7F4;
+    text-align: left;
     width: 100%;
-    height: 30rem;
-    text-align: center;
+    height: 50rem;
 }
 
 .who{
-    font-weight: 400;
+    padding: 5rem;
+    font-size: 2.5em;
+    font-weight: 600;
 }
 
-.who,
-.description p{
-    margin-top: 2rem;
+hr{
+    margin-left: 45rem;
+    height: 0.1rem !important;
+    width: 45rem;
+    color: #282828;
+}
+
+.acc{
+    color: #F8F7F4;
+    text-decoration: none;
+}
+
+.acc:hover{
+    color: #F8F7F4;
+    text-decoration: none;
+}
+
+.number{
+    padding: 5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#cuore{
+    width: 35rem;
+    height: 30rem;
+    float: left;
+    margin-left: 5rem;
 }
 
 /*dark mode*/
@@ -112,7 +150,14 @@ p{
     transition: 0.3s;
 }
 
-.ml3-mode{
+.navbar-mode{
+    background: #282828;
+    box-shadow: 0 0 1rem #282828;
+    color: #F8F7F4;
+}
+
+.nav-link-mode,
+.nav-link-mode:hover{
     color: #F8F7F4;
 }
 
