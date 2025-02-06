@@ -19,10 +19,6 @@ h1{
 
 .ml3{
     font-size: 3.5em;
-    margin-top: 10rem;
-}
-
-.name{
     font-weight: 600;
     color: #F8F7F4;
 }
@@ -77,15 +73,14 @@ p{
 .presentation{
     top: 0;
     position: absolute;
-    right: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .flex-fill{
     width: 50%;
     height: 38rem;
     background: #1B7B82;
-    margin-left: -0.75rem;
-    margin-right: -0.75rem;
 }
 
 #mani{
@@ -104,36 +99,70 @@ p{
     color: #F8F7F4;
     text-align: left;
     width: 100%;
-    height: 50rem;
+    height: 45rem;
+    padding: 2rem;
 }
 
-.who{
-    padding: 5rem;
+.description h1{
+    padding: 2rem;
     font-size: 2.5em;
     font-weight: 600;
+    color: #F8F7F4;
+}
+
+hr,
+.accordion-click,
+.accordion-body{
+    width: 45rem;
+}
+
+hr,
+.accordion-item{
+    margin-left: 45rem;
 }
 
 hr{
-    margin-left: 45rem;
     height: 0.1rem !important;
-    width: 45rem;
     color: #282828;
 }
 
-.acc{
-    color: #F8F7F4;
-    text-decoration: none;
+.accordion-item{
+    background: #19A893;
+    outline: #19A893 solid;
 }
 
-.acc:hover{
+.accordion-click{
+    cursor: pointer;
+}
+
+.accordion-click,
+.accordion-click:not(.collapsed),
+.accordion-click:hover,
+.accordion-click:focus{
     color: #F8F7F4;
     text-decoration: none;
+    display: block;
+    padding: 1rem;
+    outline: #19A893 solid;
+    box-shadow: none;
+}
+
+.accordion-click,
+.number{
+    font-family: "Merryweather", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .number{
-    padding: 5rem;
-    font-size: 1.5rem;
-    font-weight: 700;
+    padding: 1rem;
+}
+
+.accordion-body,
+.accordion-body:focus{
+    font-family: "Lato", sans-serif;
+    cursor: default;
+    outline: #19A893 solid;
 }
 
 #cuore{
@@ -152,7 +181,7 @@ hr{
 
 .navbar-mode{
     background: #282828;
-    box-shadow: 0 0 1rem #282828;
+    box-shadow: 0 0 1rem #F8F7F4;
     color: #F8F7F4;
 }
 

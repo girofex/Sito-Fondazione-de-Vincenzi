@@ -3,25 +3,20 @@ var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
 
 function switchMode() {
-    if(mode.src.includes("moon.png")){
-        mode.src = "../img/sun.png";
+    if(mode.src.includes("luna.png")){
+        mode.src = "../img/sole.png";
         localStorage.setItem('theme', true);
     }else{
-        mode.src = "../img/moon.png";
+        mode.src = "../img/luna.png";
         localStorage.setItem('theme', false);
     }
+    
+    var nav = document.querySelector(".navbar");
+    nav.classList.toggle("navbar-mode");
 
-    //body
-    var bodyElement = document.body;
-    bodyElement.classList.toggle("background-mode");
-
-    //contatti
-    var contacts = document.querySelector(".contacts");
-    contacts.classList.toggle("contacts-mode");
-
-    var link = document.querySelectorAll(".link_email");
-    link.forEach(function(link) {
-        link.classList.toggle("link_email-mode");
+    var nav_link = document.querySelectorAll(".nav-link");
+    nav_link.forEach(function(nav_link) {
+        nav_link.classList.toggle("nav-link-mode");
     });
 }
 

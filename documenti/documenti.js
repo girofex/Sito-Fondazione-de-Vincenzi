@@ -4,17 +4,21 @@ var themeMode = localStorage.getItem('theme');
 var btn = document.querySelectorAll(".btn");
 
 function switchMode() {
-    if(mode.src.includes("moon.png")){
-        mode.src = "../img/sun.png";
+    if(mode.src.includes("luna.png")){
+        mode.src = "../img/sole.png";
         localStorage.setItem('theme', true);
     }else{
-        mode.src = "../img/moon.png";
+        mode.src = "../img/luna.png";
         localStorage.setItem('theme', false);
     }
     
-    //body
-    var bodyElement = document.body;
-    bodyElement.classList.toggle("background-mode");
+    var nav = document.querySelector(".navbar");
+    nav.classList.toggle("navbar-mode");
+
+    var nav_link = document.querySelectorAll(".nav-link");
+    nav_link.forEach(function(nav_link) {
+        nav_link.classList.toggle("nav-link-mode");
+    });
 
     //bottoni
     btn.forEach(function(btn) {
