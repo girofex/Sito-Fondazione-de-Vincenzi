@@ -31,7 +31,7 @@ if(themeMode == "true"){
 }
 
 //per aprire pdf
-function handleButtonClick(destination, openInNewWindow) {
+function handlebtnClick(destination, openInNewWindow) {
     if(openInNewWindow){
         if(destination)
             window.open(destination, '_blank');
