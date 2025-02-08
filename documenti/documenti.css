@@ -142,13 +142,11 @@ h2{
         font-size: 1rem;
     }
 
-    .docs{
-        display: flex;
-    }
-
-    .btn{
-        height: 18rem;
-        width: 13rem;
-        margin: auto;
+    .section{
+        margin-top: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+        height: 10rem;
+        width: 10rem;
     }
 }

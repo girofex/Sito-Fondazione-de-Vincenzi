@@ -67,15 +67,9 @@ p{
     text-decoration: underline;
 }
 
-.references{
-    top: 5rem;
-    position: absolute;
-    margin: 0;
-    padding: 0;
-}
-
-.contacts{
-    padding: 2rem;
+.row{
+    height: calc(100vh - 6rem);
+    margin-right: 0;
 }
 
 #iban,
@@ -83,15 +77,6 @@ p{
 #info{
     width: 2rem;
     height: 2rem;
-}
-
-.flex-fill{
-    width: 50rem;
-}
-
-iframe{
-    width: 50rem;
-    height: 38rem;
 }
 
 /*dark mode*/
@@ -142,9 +127,8 @@ iframe{
     }
 
     .contacts{
-        margin-top: -0.5rem;
-        padding: 0.5rem;
-        width: 100%;
+        margin-top: -3rem;
+        margin-left: -1rem;
     }
 
     #iban,
@@ -155,8 +139,6 @@ iframe{
     }
 
     iframe{
-        width: 24rem;
-        height: 24rem;
-        margin: auto;
+        height: 20rem !important;
     }
 }

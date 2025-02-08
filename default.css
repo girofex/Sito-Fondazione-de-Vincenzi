@@ -37,8 +37,12 @@ h3{
     font-weight: 400;
 }
 
+.btn,
 p{
     font-family: "Lato", sans-serif;
+}
+
+p{
     font-weight: 400;
     font-size: 1.5rem;
 }
@@ -75,6 +79,29 @@ p{
     position: absolute;
     margin: 0;
     padding: 0;
+}
+
+.btn{
+    height: 3rem;
+    border-radius: 0;
+}
+  
+.btn,
+.btn:active,
+.btn:focus{
+    margin-top: 1rem;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    background: #19A893;
+    color: #F8F7F4;
+    text-align: center;
+    border: none;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover{
+    background: #F8F7F4;
+    color: #282828;
+    transition: .3s;
 }
 
 .flex-fill{
@@ -167,6 +194,16 @@ hr{
     font-family: "Lato", sans-serif;
     cursor: default;
     outline: #1B7B82 solid;
+}
+
+#top{
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
 }
 
 /*dark mode*/

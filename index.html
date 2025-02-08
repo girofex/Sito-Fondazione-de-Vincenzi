@@ -40,6 +40,7 @@
         <div class="d-flex flex-column justify-content-center align-items-center flex-fill">
             <h1 class="ml3">Fondazione De Vincenzi</h1>
             <h2 style="color: #F8F7F4">Con voi dal 2024</h2>
+            <button class="btn" onclick="window.location.href='#01'">Vienici a conoscere</button>
         </div>
 
         <div class="flex-fill">
@@ -61,7 +62,7 @@
                 <div class="accordion-item">
                     <h2 class="accordion-header">
                         <a class="accordion-click" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            <span class="number">01</span> Chi siamo
+                            <span class="number" id="01">01</span> Chi siamo
                         </a>
                     </h2>
 
@@ -108,6 +109,8 @@
             </div>
         </div>
     </div>
+
+    <img src="img/top.png" id="top" alt="Via in alto" onclick="GoTop()">
 
     <script src="default.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
