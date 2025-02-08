@@ -16,19 +16,14 @@ body{
     box-shadow: 0 0 1rem #282828;
 }
 
-h2,
-p{
+h2{
     color: #F8F7F4;
     cursor: default;
-}
-
-h2{
     font-family: "Merriweather", serif;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
-p,
 .btn{
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -51,26 +46,24 @@ p,
     color: #282828;
 }
 
-.vr{
-    margin-top: 5rem;
-    width: 0.05rem !important;
-    background-color: #282828;
-    align-self: stretch;
-}
-
 .section{
+    margin-top: 5rem;
+    margin-right: 3rem;
     position: relative;
     padding: 5rem;
     text-align: center;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
+    height: 30rem;
+    width: 23rem;
+    box-shadow: 0 0 1rem #282828;
 }
 
-.section:nth-child(1) { background-image: url('../img/bilancio.jpg'); }
-.section:nth-child(3) { background-image: url('../img/statuto.jpg'); }
-.section:nth-child(5) { background-image: url('../img/codice_fiscale.jpg'); }
-.section:nth-child(7) { background-image: url('../img/runts.jpg'); }
+.section:nth-of-type(1) { background-image: url('../img/bilancio.jpg'); }
+.section:nth-of-type(2) { background-image: url('../img/statuto.jpg'); }
+.section:nth-of-type(3) { background-image: url('../img/codice_fiscale.jpg'); }
+.section:nth-of-type(4) { background-image: url('../img/runts.jpg'); }
 
 .navbar,
 .btn{
@@ -81,7 +74,7 @@ p,
 .btn,
 .btn:active,
 .btn:focus{
-    margin-top: 2rem;
+    margin-top: 15rem;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
     background: #F8F7F4;
     color: #282828;
@@ -146,10 +139,6 @@ p,
     }
 
     h2{
-        font-size: 1rem;
-    }
-
-    p{
         font-size: 1rem;
     }
 

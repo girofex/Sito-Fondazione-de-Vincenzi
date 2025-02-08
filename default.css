@@ -85,6 +85,7 @@ p{
 
 #mani{
     height: 38rem;
+    width: 100%;
 }
 
 #logo{
@@ -95,7 +96,7 @@ p{
 
 .description{
     margin-top: 5rem;
-    background: #19A893;
+    background: #1B7B82;
     color: #F8F7F4;
     text-align: left;
     width: 100%;
@@ -110,15 +111,15 @@ p{
     color: #F8F7F4;
 }
 
-hr,
-.accordion-click,
-.accordion-body{
-    width: 45rem;
+#cuore{
+    padding: 2rem;
+    width: 35rem;
+    height: 30rem;
 }
 
-hr,
-.accordion-item{
-    margin-left: 45rem;
+.accordion{
+    margin-left: 5rem;
+    width: 50%;
 }
 
 hr{
@@ -127,8 +128,8 @@ hr{
 }
 
 .accordion-item{
-    background: #19A893;
-    outline: #19A893 solid;
+    background: #1B7B82;
+    outline: #1B7B82 solid;
 }
 
 .accordion-click{
@@ -143,13 +144,16 @@ hr{
     text-decoration: none;
     display: block;
     padding: 1rem;
-    outline: #19A893 solid;
+    outline: #1B7B82 solid;
     box-shadow: none;
 }
 
 .accordion-click,
+.accordion-click:hover,
+.accordion-click:not(.collapsed),
 .number{
     font-family: "Merryweather", serif;
+    color: #2bc8ac;
     font-size: 1.5rem;
     font-weight: 700;
 }
@@ -162,14 +166,7 @@ hr{
 .accordion-body:focus{
     font-family: "Lato", sans-serif;
     cursor: default;
-    outline: #19A893 solid;
-}
-
-#cuore{
-    width: 35rem;
-    height: 30rem;
-    float: left;
-    margin-left: 5rem;
+    outline: #1B7B82 solid;
 }
 
 /*dark mode*/
