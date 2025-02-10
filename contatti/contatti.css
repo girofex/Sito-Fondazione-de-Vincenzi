@@ -6,7 +6,7 @@ body{
 
 .navbar,
 h1{
-    font-family: "Merriweather", serif;
+    font-family: "Funnel Display", serif;
     font-weight: 500;
     font-style: normal;
     color: #282828;
@@ -19,13 +19,13 @@ p{
 
 h2{
     margin-top: 2rem;
-    font-family: "Merriweather", serif;
+    font-family: "Funnel Display", serif;
     font-size: 2.5rem;
     font-weight: 400;
 }
 
 p{
-    font-family: "Lato", sans-serif;
+    font-family: "Work Sans", serif;
     font-weight: 400;
     font-size: 1.2rem;
 }
@@ -42,6 +42,7 @@ p{
 }
 
 #mode{
+    margin-top: -0.2rem;
     margin-left: -0.5rem;
     width: 1.5rem;
     height: 1.5rem;

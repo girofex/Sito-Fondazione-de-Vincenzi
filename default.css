@@ -6,7 +6,7 @@ body{
 
 .navbar,
 h1{
-    font-family: "Merriweather", serif;
+    font-family: "Funnel Display", serif;
     font-weight: 500;
     font-style: normal;
     color: #282828;
@@ -32,14 +32,14 @@ p{
 
 h2,
 h3{
-    font-family: "Merryweather", serif;
+    font-family: "Funnel Display", serif;
     font-size: 2.5rem;
     font-weight: 400;
 }
 
 .btn,
 p{
-    font-family: "Lato", sans-serif;
+    font-family: "Work Sans", serif;
 }
 
 p{
@@ -59,6 +59,7 @@ p{
 }
 
 #mode{
+    margin-top: -0.2rem;
     margin-left: -0.5rem;
     width: 1.5rem;
     height: 1.5rem;
@@ -79,11 +80,17 @@ p{
     position: absolute;
     margin: 0;
     padding: 0;
+    background: hsla(184, 66%, 31%, 1);
+    background: linear-gradient(0deg, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1B7B82", endColorstr="#19A893", GradientType=1 );
 }
 
 .btn{
     height: 3rem;
     border-radius: 0;
+    backdrop-filter: blur(10px);
 }
   
 .btn,
@@ -91,10 +98,10 @@ p{
 .btn:focus{
     margin-top: 1rem;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
-    background: #19A893;
     color: #F8F7F4;
     text-align: center;
-    border: none;
+    border: #F8F7F4 solid;
+    border-width: 1px;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
 }
 
@@ -107,12 +114,17 @@ p{
 .flex-fill{
     width: 50%;
     height: 38rem;
-    background: #1B7B82;
+}
+
+#mani,
+#cuore{
+    clip-path: polygon(0% 0%, 75% 0%, 100% 25%, 100% 100%, 0% 100%);
 }
 
 #mani{
-    height: 38rem;
-    width: 100%;
+    margin-top: 5.7rem;
+    height: 30rem;
+    width: 35rem;
 }
 
 #logo{
@@ -179,7 +191,7 @@ hr{
 .accordion-click:hover,
 .accordion-click:not(.collapsed),
 .number{
-    font-family: "Merryweather", serif;
+    font-family: "Funnel Display", serif;
     color: #2bc8ac;
     font-size: 1.5rem;
     font-weight: 700;
@@ -191,7 +203,7 @@ hr{
 
 .accordion-body,
 .accordion-body:focus{
-    font-family: "Lato", sans-serif;
+    font-family: "Work Sans", serif;
     cursor: default;
     outline: #1B7B82 solid;
 }

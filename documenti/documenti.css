@@ -5,7 +5,7 @@ body{
 
 .navbar{
     color: #282828;
-    font-family: "Merriweather", serif;
+    font-family: "Funnel Display", serif;
     font-weight: 500;
     font-style: normal;
     background: #F8F7F4;
@@ -19,18 +19,19 @@ body{
 h2{
     color: #F8F7F4;
     cursor: default;
-    font-family: "Merriweather", serif;
+    font-family: "Funnel Display", serif;
     font-size: 1.5rem;
     font-weight: 600;
 }
 
 .btn{
-    font-family: "Lato", sans-serif;
+    font-family: "Work Sans", serif;
     font-weight: 400;
     font-size: 1rem;
 }
 
 #mode{
+    margin-top: -0.2rem;
     margin-left: -0.5rem;
     width: 1.5rem;
     height: 1.5rem;
