@@ -1,7 +1,12 @@
 body{
-    background: #1B7B82;
+    background: hsla(184, 66%, 31%, 1);
+    background: linear-gradient(0deg, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -moz-linear-gradient(0deg, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(0deg, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1B7B82", endColorstr="#19A893", GradientType=1 );
     color: #F8F7F4;
     transition: 0.3s;
+    cursor: default;
 }
 
 .navbar,
@@ -10,11 +15,6 @@ h1{
     font-weight: 500;
     font-style: normal;
     color: #282828;
-}
-
-h2,
-p{
-    cursor: default;
 }
 
 h2{
