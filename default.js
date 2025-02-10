@@ -50,6 +50,9 @@ function switchMode() {
     nav_link.forEach(function(nav_link) {
         nav_link.classList.toggle("nav-link-mode");
     });
+    
+    var stats = document.querySelector(".stats");
+    stats.classList.toggle("stats-mode");
 }
 
 if(themeMode == "true"){

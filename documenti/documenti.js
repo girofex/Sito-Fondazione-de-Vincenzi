@@ -1,7 +1,6 @@
 //tema chiaro e scuro
 var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
-var btn = document.querySelectorAll(".btn");
 
 function switchMode() {
     if(mode.src.includes("luna.png")){
@@ -20,9 +19,9 @@ function switchMode() {
         nav_link.classList.toggle("nav-link-mode");
     });
 
-    //bottoni
-    btn.forEach(function(btn) {
-        btn.classList.toggle("btn-mode");
+    var section = document.querySelectorAll(".section");
+    section.forEach(function(section) {
+        section.classList.toggle("section-mode");
     });
 }
 
@@ -31,7 +30,7 @@ if(themeMode == "true"){
 }
 
 //per aprire pdf
-function handlebtnClick(destination, openInNewWindow) {
+function handleButtonClick(destination, openInNewWindow) {
     if(openInNewWindow){
         if(destination)
             window.open(destination, '_blank');

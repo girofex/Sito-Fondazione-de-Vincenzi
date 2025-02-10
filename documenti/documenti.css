@@ -1,6 +1,7 @@
 body{
     background: #1B7B82;
     transition: 0.3s;
+    cursor: default
 }
 
 .navbar{
@@ -18,9 +19,9 @@ body{
 
 h2{
     color: #F8F7F4;
-    cursor: default;
+    text-shadow: 2px 2px 5px #282828;
     font-family: "Funnel Display", serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 600;
 }
 
@@ -28,6 +29,8 @@ h2{
     font-family: "Work Sans", serif;
     font-weight: 400;
     font-size: 1rem;
+    border-radius: 0;
+    backdrop-filter: blur(10px);
 }
 
 #mode{
@@ -47,23 +50,25 @@ h2{
     color: #282828;
 }
 
-.section{
-    margin-top: 5rem;
+.section {
+    margin-top: 2rem;
     margin-right: 3rem;
     position: relative;
     padding: 5rem;
     text-align: center;
     background-size: 100%;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     height: 30rem;
     width: 23rem;
     box-shadow: 0 0 1rem #282828;
+    border: #F8F7F4 1rem solid;
 }
 
 .section:nth-of-type(1) { background-image: url('../img/bilancio.jpg'); }
 .section:nth-of-type(2) { background-image: url('../img/statuto.jpg'); }
-.section:nth-of-type(3) { background-image: url('../img/codice_fiscale.jpg'); }
+.section:nth-of-type(3) { background-image: url('../img/codice_fiscale.jpg'); 
+                            background-size: 110%;}
 .section:nth-of-type(4) { background-image: url('../img/runts.jpg'); }
 
 .navbar,
@@ -77,16 +82,16 @@ h2{
 .btn:focus{
     margin-top: 15rem;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
-    background: #F8F7F4;
-    color: #282828;
+    color: #F8F7F4;
     text-align: center;
-    border: none;
+    border: #F8F7F4 solid;
+    border-width: 1px;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
 }
 
 .btn:hover{
-    background: #19A893;
-    color: #F8F7F4;
+    background: #F8F7F4;
+    color: #282828;
     transition: .3s;
 }
 
@@ -102,9 +107,8 @@ h2{
     color: #F8F7F4;
 }
 
-.btn-mode{
-    background: #282828;
-    color: #F8F7F4;
+.section-mode{
+    border: #282828 1rem solid;
 }
 
 /* responsive */

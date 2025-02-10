@@ -2,6 +2,7 @@ body{
     background: #F8F7F4;
     text-align: center;
     transition: 0.3s;
+    cursor: default;
 }
 
 .navbar,
@@ -12,22 +13,10 @@ h1{
     color: #282828;
 }
 
-.ml3,
-.who{
-    cursor: default;
-}
-
 .ml3{
     font-size: 3.5em;
     font-weight: 600;
     color: #F8F7F4;
-}
-
-h1,
-h2,
-h3
-p{
-    cursor: default;
 }
 
 h2,
@@ -111,7 +100,7 @@ p{
     transition: .3s;
 }
 
-.flex-fill{
+.presentation > .flex-fill{
     width: 50%;
     height: 38rem;
 }
@@ -128,9 +117,24 @@ p{
 }
 
 #logo{
-    margin-top: 35rem;
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
+}
+
+.stats{
+    margin-top: 25rem;
+    color: #282828;
+}
+
+.stats > .flex-fill{
+    width: 25%;
+    margin-top: 15rem;
+}
+
+.perc{
+    font-family: "Funnel Display", serif;
+    font-size: 5rem;
+    color: #2bc8ac;
 }
 
 .description{
@@ -204,7 +208,6 @@ hr{
 .accordion-body,
 .accordion-body:focus{
     font-family: "Work Sans", serif;
-    cursor: default;
     outline: #1B7B82 solid;
 }
 
@@ -221,7 +224,6 @@ hr{
 /*dark mode*/
 .background-mode{
     background: #282828;
-    color: #F8F7F4;
     transition: 0.3s;
 }
 
@@ -232,7 +234,8 @@ hr{
 }
 
 .nav-link-mode,
-.nav-link-mode:hover{
+.nav-link-mode:hover,
+.stats-mode{
     color: #F8F7F4;
 }
 
