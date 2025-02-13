@@ -1,3 +1,19 @@
+//vai in alto
+var topButton = document.getElementById("top");
+    
+function GoTop() {
+    const scroll = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+
+        if (c > 0) {
+            window.requestAnimationFrame(scroll);
+            window.scrollTo(0, c - c);
+        }
+    };
+
+    scroll();
+}
+
 //tema chiaro e scuro
 var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');

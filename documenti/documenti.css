@@ -1,7 +1,8 @@
 body{
     background: #1B7B82;
     transition: 0.3s;
-    cursor: default
+    font-family: "Work Sans", serif;
+    cursor: default;
 }
 
 .navbar{
@@ -26,12 +27,45 @@ h2{
     font-weight: 600;
 }
 
-.btn{
-    font-family: "Work Sans", serif;
+h3{
+    font-family: "Funnel Display", serif;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+.navbar,
+.btn{
+    height: 3rem;
     border-radius: 0;
+}
+
+.btn{
+    font-weight: 400;
     backdrop-filter: blur(10px);
+}
+
+.bottom-content > .btn{
+    margin-top: 15rem !important;
+}
+  
+.btn,
+.btn:active,
+.btn:focus{
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    color: #F8F7F4;
+    text-align: center;
+    border: #F8F7F4 solid;
+    border-width: 1px;
+}
+
+.btn:hover{
+    background: #F8F7F4;
+    color: #282828;
+    transition: .3s;
 }
 
 #mode{
@@ -52,7 +86,11 @@ h2{
     color: #282828;
 }
 
-.section {
+.docs{
+    height: 40rem;
+}
+
+.section{
     margin-top: 2rem;
     margin-right: 3rem;
     position: relative;
@@ -74,27 +112,61 @@ h2{
                             background-size: 110%; }
 .section:nth-of-type(4) { background-image: url('/img/runts.jpg'); }
 
-.navbar,
-.btn{
-    height: 3rem;
-    border-radius: 0;
-}
-  
-.btn,
-.btn:active,
-.btn:focus{
-    margin-top: 15rem;
-    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+.footer{
+    padding: 2rem;
+    bottom: 0;
+    position: block;
+    text-align: left;
+    width: 100%;
     color: #F8F7F4;
-    text-align: center;
-    border: #F8F7F4 solid;
-    border-width: 1px;
+    background: hsla(184, 66%, 31%, 1);
+    background: linear-gradient(to bottom, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -moz-linear-gradient(to bottom, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(to bottom, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1B7B82", endColorstr="#19A893", GradientType=0);
 }
 
-.btn:hover{
-    background: #F8F7F4;
-    color: #282828;
-    transition: .3s;
+.footer > .flex-fill{
+    width: 25%;
+}
+
+hr{
+    height: 0.1rem !important;
+    color: #F8F7F4;
+    width: 50rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+#logo{
+    width: 10rem;
+    height: 10rem;
+}
+
+.footer p,
+.footer > .btn,
+.footer > .copyright{
+    font-size: 1rem;
+}
+
+.link_email{
+    color: #F8F7F4;
+    text-decoration: none;
+}
+
+.link_email:hover{
+    color: #F8F7F4;
+    text-decoration: underline;
+}
+
+#top{
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
 }
 
 /*dark mode*/

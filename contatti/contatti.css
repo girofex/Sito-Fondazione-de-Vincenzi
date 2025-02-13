@@ -1,11 +1,8 @@
 body{
-    background: hsla(184, 66%, 31%, 1);
-    background: linear-gradient(0deg, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
-    background: -moz-linear-gradient(0deg, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
-    background: -webkit-linear-gradient(0deg, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1B7B82", endColorstr="#19A893", GradientType=1 );
+    background: #1B7B82;
     color: #F8F7F4;
     transition: 0.3s;
+    font-family: "Work Sans", serif;
     cursor: default;
 }
 
@@ -24,8 +21,13 @@ h2{
     font-weight: 400;
 }
 
+h3{
+    font-family: "Funnel Display", serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
 p{
-    font-family: "Work Sans", serif;
     font-weight: 400;
     font-size: 1.2rem;
 }
@@ -69,7 +71,7 @@ p{
 }
 
 .row{
-    height: calc(100vh - 6rem);
+    height: 48rem;
     margin-right: 0;
 }
 
@@ -78,6 +80,86 @@ p{
 #info{
     width: 2rem;
     height: 2rem;
+}
+
+.btn{
+    height: 3rem;
+    border-radius: 0;
+    font-weight: 400;
+    backdrop-filter: blur(10px);
+}
+
+.btn,
+.btn:active,
+.btn:focus{
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    color: #F8F7F4;
+    text-align: center;
+    border: #F8F7F4 solid;
+    border-width: 1px;
+}
+
+.btn:hover{
+    background: #F8F7F4;
+    color: #282828;
+    transition: .3s;
+}
+
+.footer{
+    padding: 2rem;
+    bottom: 0;
+    position: block;
+    text-align: left;
+    width: 100%;
+    color: #F8F7F4;
+    background: hsla(184, 66%, 31%, 1);
+    background: linear-gradient(to bottom, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -moz-linear-gradient(to bottom, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(to bottom, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1B7B82", endColorstr="#19A893", GradientType=0);
+}
+
+.footer > .flex-fill{
+    width: 25%;
+}
+
+hr{
+    height: 0.1rem !important;
+    color: #F8F7F4;
+    width: 50rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+#logo{
+    width: 10rem;
+    height: 10rem;
+}
+
+.footer p,
+.footer > .btn,
+.footer > .copyright{
+    font-size: 1rem;
+}
+
+.link_email{
+    color: #F8F7F4;
+    text-decoration: none;
+}
+
+.link_email:hover{
+    color: #F8F7F4;
+    text-decoration: underline;
+}
+
+#top{
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
 }
 
 /*dark mode*/
