@@ -19,11 +19,23 @@ h1{
     color: #F8F7F4;
 }
 
+h1,
+h2{
+    margin-left: 0rem !important;
+}
+
 h2,
 h3{
     font-family: "Funnel Display", serif;
-    font-size: 2.5rem;
     font-weight: 400;
+}
+
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
 }
 
 .btn,
@@ -85,7 +97,6 @@ p{
 .btn,
 .btn:active,
 .btn:focus{
-    margin-top: 1rem;
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
     color: #F8F7F4;
     text-align: center;
@@ -126,8 +137,12 @@ p{
     color: #282828;
 }
 
-.stats > .flex-fill{
+.stats > .flex-fill,
+.footer > .flex-fill{
     width: 25%;
+}
+
+.stats > .flex-fill{
     margin-top: 15rem;
 }
 
@@ -137,7 +152,7 @@ p{
     color: #2bc8ac;
 }
 
-.description{
+#description{
     margin-top: 5rem;
     background: #1B7B82;
     color: #F8F7F4;
@@ -147,7 +162,8 @@ p{
     padding: 2rem;
 }
 
-.description h1{
+#description h1{
+    margin-left: 0;
     padding: 2rem;
     font-size: 2.5em;
     font-weight: 600;
@@ -160,8 +176,12 @@ p{
     height: 30rem;
 }
 
-.accordion{
+.accordion,
+h1{ 
     margin-left: 5rem;
+}
+
+.accordion{
     width: 50%;
 }
 
@@ -209,6 +229,43 @@ hr{
 .accordion-body:focus{
     font-family: "Work Sans", serif;
     outline: #1B7B82 solid;
+}
+
+.footer{
+    font-family: "Work Sans", serif;
+    padding: 2rem;
+    bottom: 0;
+    position: block;
+    text-align: left;
+    width: 100%;
+    color: #F8F7F4;
+    background: hsla(184, 66%, 31%, 1);
+    background: linear-gradient(to bottom, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -moz-linear-gradient(to bottom, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    background: -webkit-linear-gradient(to bottom, hsla(184, 66%, 31%, 1) 0%, hsla(171, 74%, 38%, 1) 50%, hsla(169, 65%, 48%, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#1B7B82", endColorstr="#19A893", GradientType=0);
+}
+
+.footer p,
+.footer > .btn,
+.footer > .copyright{
+    font-size: 1rem;
+}
+
+.footer > hr{
+    width: 50rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.link_email{
+    color: #F8F7F4;
+    text-decoration: none;
+}
+
+.link_email:hover{
+    color: #F8F7F4;
+    text-decoration: underline;
 }
 
 #top{
