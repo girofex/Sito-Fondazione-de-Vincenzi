@@ -1,0 +1,160 @@
+body{
+    background: #1B7B82;
+    transition: 0.3s;
+    cursor: default
+}
+
+.navbar{
+    color: #282828;
+    font-family: "Funnel Display", serif;
+    font-weight: 500;
+    font-style: normal;
+    background: #F8F7F4;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    width: 50%;
+    box-shadow: 0 0 1rem #282828;
+    transition: 0.3s;
+}
+
+h2{
+    color: #F8F7F4;
+    text-shadow: 2px 2px 5px #282828;
+    font-family: "Funnel Display", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.btn{
+    font-family: "Work Sans", serif;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 0;
+    backdrop-filter: blur(10px);
+}
+
+#mode{
+    margin-top: -0.2rem;
+    margin-left: -0.5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.nav-link{
+    color: #282828;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    color: #282828;
+}
+
+.section {
+    margin-top: 2rem;
+    margin-right: 3rem;
+    position: relative;
+    padding: 5rem;
+    text-align: center;
+    background-size: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    height: 30rem;
+    width: 23rem;
+    box-shadow: 0 0 1rem #282828;
+    border: #F8F7F4 1rem solid;
+    transition: 0.3s;
+}
+
+.section:nth-of-type(1) { background-image: url('../img/beneficiari.jpg'); }
+.section:nth-of-type(2) { background-image: url('../img/fornitori.jpg'); }
+.section:nth-of-type(3) { background-image: url('../img/privacy.jpg'); }
+
+.navbar,
+.btn{
+    height: 3rem;
+    border-radius: 0;
+}
+  
+.btn,
+.btn:active,
+.btn:focus{
+    margin-top: 15rem;
+    transition: color 0.5s, transform 0.2s, background-color 0.2s;
+    color: #F8F7F4;
+    text-align: center;
+    border: #F8F7F4 solid;
+    border-width: 1px;
+}
+
+.btn:hover{
+    background: #F8F7F4;
+    color: #282828;
+    transition: .3s;
+}
+
+/*dark mode*/
+.navbar-mode{
+    background: #282828;
+    box-shadow: 0 0 1rem #F8F7F4;
+    color: #F8F7F4;
+    transition: 0.3s;
+}
+
+.nav-link-mode,
+.nav-link-mode:hover{
+    color: #F8F7F4;
+    transition: 0.3s;
+}
+
+.section-mode{
+    border: #282828 1rem solid;
+    transition: 0.3s;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 992px) {
+    .navbar{
+        height: 3rem;
+    }
+    
+    #mode{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-top: -0.2rem;
+        margin-left: -1rem;
+    }
+
+    #logo{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .nav-link,
+    .navbar-text{
+        font-size: 0.6rem;
+    }
+
+    #home{
+        margin-left: -0.8rem;
+    }
+
+    .navbar-text{
+        margin-right: -1rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    .section{
+        margin-top: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+        height: 10rem;
+        width: 10rem;
+    }
+}
