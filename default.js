@@ -51,9 +51,11 @@ var themeMode = localStorage.getItem('theme');
 function switchMode() {
     if(mode.src.includes("luna.png")){
         mode.src = "img/sole.png";
+        topButton.src = "img/top_bianco.png";
         localStorage.setItem('theme', true);
     }else{
         mode.src = "img/luna.png";
+        topButton.src = "img/top_nero.png";
         localStorage.setItem('theme', false);
     }
 
