@@ -1,3 +1,20 @@
+//refresh posizione
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+
+//vai in basso
+document.getElementById('scrollBtn').addEventListener('click', function() {
+    const element = document.getElementById('description');
+    const elementPosition = element.getBoundingClientRect().top;
+    const position = elementPosition + window.scrollY;
+    
+    window.scrollTo({
+        top: position,
+        behavior: 'smooth'
+    });
+});
+
 //vai in alto
 var topButton = document.getElementById("top");
     
