@@ -34,11 +34,6 @@ function switchMode() {
     nav_link.forEach(function(nav_link) {
         nav_link.classList.toggle("nav-link-mode");
     });
-
-    var section = document.querySelectorAll(".section");
-    section.forEach(function(section) {
-        section.classList.toggle("section-mode");
-    });
 }
 
 if(themeMode == "true"){

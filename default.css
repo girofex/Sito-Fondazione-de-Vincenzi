@@ -63,13 +63,15 @@ p{
     cursor: pointer;
 }
 
-.nav-link{
+.nav-link,
+.nav-link:focus{
     color: #282828;
 }
 
 .nav-link:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: #282828;
+    text-shadow: 0 0 1rem #282828;
 }
 
 .presentation{
@@ -184,7 +186,7 @@ h1{
 
 hr{
     height: 0.1rem !important;
-    color: #282828;
+    color: #F8F7F4;
 }
 
 .accordion-item{
@@ -228,7 +230,7 @@ hr{
 }
 
 .footer{
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     bottom: 0;
     position: block;
     text-align: left;
@@ -286,9 +288,15 @@ hr{
 }
 
 .nav-link-mode,
-.nav-link-mode:hover,
+.nav-link-mode:focus,
 .stats-mode{
     color: #F8F7F4;
+}
+
+.nav-link-mode:hover{
+    color: #F8F7F4;
+    text-shadow: 0 0 1rem #F8F7F4;
+    transition: 0.3s;
 }
 
 /* responsive */

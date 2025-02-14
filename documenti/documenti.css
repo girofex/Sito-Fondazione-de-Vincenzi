@@ -38,23 +38,37 @@ p{
 }
 
 .navbar,
-.btn{
-    height: 3rem;
+.btn,
+.dropdown-menu{
     border-radius: 0;
 }
 
+.navbar,
 .btn{
+    height: 3rem;
+}
+
+.dropdown-menu{
+    max-height: 20rem;
+    overflow-y: auto;
+}
+
+.btn,
+.dropdown-menu{
+    width: 10rem;
     font-weight: 400;
     backdrop-filter: blur(10px);
 }
 
-.bottom-content > .btn{
+.bottom-content > .btn,
+.bottom-content > .dropdown > .btn{
     margin-top: 15rem !important;
 }
   
 .btn,
 .btn:active,
-.btn:focus{
+.btn:focus,
+.dropdown-menu{
     transition: color 0.5s, transform 0.2s, background-color 0.2s;
     color: #F8F7F4;
     text-align: center;
@@ -68,6 +82,10 @@ p{
     transition: .3s;
 }
 
+.dropdown-item{
+    cursor: pointer;
+}
+
 #mode{
     margin-top: -0.2rem;
     margin-left: -0.5rem;
@@ -76,14 +94,16 @@ p{
     cursor: pointer;
 }
 
-.nav-link{
+.nav-link,
+.nav-link:focus{
     color: #282828;
     transition: 0.3s;
 }
 
 .nav-link:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: #282828;
+    text-shadow: 0 0 1rem #282828;
 }
 
 .docs{
@@ -100,9 +120,8 @@ p{
     background-position: top;
     background-repeat: no-repeat;
     height: 30rem;
-    width: 23rem;
+    width: 20.5rem;
     box-shadow: 0 0 1rem #282828;
-    border: #F8F7F4 1rem solid;
     transition: 0.3s;
 }
 
@@ -113,7 +132,7 @@ p{
 .section:nth-of-type(4) { background-image: url('/img/runts.jpg'); }
 
 .footer{
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     bottom: 0;
     position: block;
     text-align: left;
@@ -178,13 +197,14 @@ hr{
 }
 
 .nav-link-mode,
-.nav-link-mode:hover{
+.nav-link-mode:focus{
     color: #F8F7F4;
     transition: 0.3s;
 }
 
-.section-mode{
-    border: #282828 1rem solid;
+.nav-link-mode:hover{
+    color: #F8F7F4;
+    text-shadow: 0 0 1rem #F8F7F4;
     transition: 0.3s;
 }
 

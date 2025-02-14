@@ -39,6 +39,7 @@ p{
 }
 
 .btn{
+    width: 10rem;
     font-weight: 400;
     font-size: 1rem;
     border-radius: 0;
@@ -59,8 +60,9 @@ p{
 }
 
 .nav-link:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: #282828;
+    text-shadow: 0 0 1rem #282828;
 }
 
 .docs{
@@ -77,9 +79,8 @@ p{
     background-position: top;
     background-repeat: no-repeat;
     height: 30rem;
-    width: 23rem;
+    width: 20.5rem;
     box-shadow: 0 0 1rem #282828;
-    border: #F8F7F4 1rem solid;
     transition: 0.3s;
 }
 
@@ -119,7 +120,7 @@ p{
 }
 
 .footer{
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
     bottom: 0;
     position: block;
     text-align: left;
@@ -183,14 +184,13 @@ hr{
     transition: 0.3s;
 }
 
-.nav-link-mode,
-.nav-link-mode:hover{
+.nav-link-mode{
     color: #F8F7F4;
-    transition: 0.3s;
 }
 
-.section-mode{
-    border: #282828 1rem solid;
+.nav-link-mode:hover{
+    color: #F8F7F4;
+    text-shadow: 0 0 1rem #F8F7F4;
     transition: 0.3s;
 }
 
