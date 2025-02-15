@@ -14,14 +14,6 @@ function GoTop() {
     scroll();
 }
 
-//mappa
-async function initMap() {
-    google.maps.importLibrary("maps");
-    google.maps.importLibrary("marker");
-}
-  
-initMap();
-
 var mode = document.getElementById("mode");
 var themeMode = localStorage.getItem('theme');
 

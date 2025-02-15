@@ -1,7 +1,6 @@
 body{
     background: #1B7B82;
     color: #F8F7F4;
-    transition: 0.3s;
     font-family: "Work Sans", serif;
     cursor: default;
 }
@@ -41,6 +40,7 @@ p{
     width: 50%;
     box-shadow: 0 0 1rem #282828;
     color: #282828;
+    transition: .3s;
 }
 
 #mode{
@@ -54,6 +54,7 @@ p{
 .nav-link,
 .nav-link:focus{
     color: #282828;
+    transition: .3s;
 }
 
 .nav-link:hover{
@@ -73,7 +74,7 @@ p{
 }
 
 .row{
-    height: 48rem;
+    height: 40rem;
     margin-right: 0;
 }
 
@@ -86,7 +87,7 @@ p{
 
 iframe{
     width: 100%;
-    height: 45rem;
+    height: 38rem;
 }
 
 .btn{
@@ -99,7 +100,6 @@ iframe{
 .btn,
 .btn:active,
 .btn:focus{
-    transition: color 0.5s, transform 0.2s, background-color 0.2s;
     color: #F8F7F4;
     text-align: center;
     border: #F8F7F4 solid;
@@ -109,7 +109,6 @@ iframe{
 .btn:hover{
     background: #F8F7F4;
     color: #282828;
-    transition: .3s;
 }
 
 .footer{
@@ -170,21 +169,23 @@ hr{
 }
 
 /*dark mode*/
+.navbar-mode,
+.nav-link-mode,
+.nav-link-mode:focus,
+.nav-link-mode:hover{
+    color: #F8F7F4;
+    transition: .3s;
+}
+
 .navbar-mode{
     background: #282828;
     box-shadow: 0 0 1rem #F8F7F4;
-    color: #F8F7F4;
-}
-
-.nav-link-mode,
-.nav-link-mode:focus{
-    color: #F8F7F4;
+    transition: .3s;
 }
 
 .nav-link-mode:hover{
-    color: #F8F7F4;
     text-shadow: 0 0 1rem #F8F7F4;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 /* responsive */

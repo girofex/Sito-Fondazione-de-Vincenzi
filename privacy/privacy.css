@@ -1,6 +1,5 @@
 body{
     background: #1B7B82;
-    transition: 0.3s;
     font-family: "Work Sans", serif;
     cursor: default;
 }
@@ -16,7 +15,7 @@ body{
     text-decoration: none;
     width: 50%;
     box-shadow: 0 0 1rem #282828;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 h2{
@@ -56,13 +55,14 @@ p{
 
 .nav-link{
     color: #282828;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .nav-link:hover{
     text-decoration: none;
     color: #282828;
     text-shadow: 0 0 1rem #282828;
+    transition: .3s;
 }
 
 .docs{
@@ -81,7 +81,6 @@ p{
     height: 30rem;
     width: 20.5rem;
     box-shadow: 0 0 1rem #282828;
-    transition: 0.3s;
 }
 
 .section:nth-of-type(1) { background-image: url('../img/beneficiari.jpg'); }
@@ -106,7 +105,6 @@ p{
 .btn,
 .btn:active,
 .btn:focus{
-    transition: color 0.5s, transform 0.2s, background-color 0.2s;
     color: #F8F7F4;
     text-align: center;
     border: #F8F7F4 solid;
@@ -116,7 +114,6 @@ p{
 .btn:hover{
     background: #F8F7F4;
     color: #282828;
-    transition: .3s;
 }
 
 .footer{
@@ -177,21 +174,22 @@ hr{
 }
 
 /*dark mode*/
+.navbar-mode,
+.nav-link-mode,
+.nav-link-mode:hover{
+    color: #F8F7F4;
+    transition: .3s;
+}
+
 .navbar-mode{
     background: #282828;
     box-shadow: 0 0 1rem #F8F7F4;
-    color: #F8F7F4;
-    transition: 0.3s;
-}
-
-.nav-link-mode{
-    color: #F8F7F4;
+    transition: .3s;
 }
 
 .nav-link-mode:hover{
-    color: #F8F7F4;
     text-shadow: 0 0 1rem #F8F7F4;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 /* responsive */
@@ -245,7 +243,6 @@ hr{
         height: 22rem;
         width: 15rem;
         box-shadow: 0 0 1rem #282828;
-        transition: 0.3s;
     }
 
     .bottom-content > .btn{

@@ -1,7 +1,7 @@
 body{
     background: #F8F7F4;
     text-align: center;
-    transition: 0.3s;
+    transition: .3s;
     font-family: "Work Sans", serif;
     cursor: default;
 }
@@ -96,18 +96,15 @@ p{
 .btn,
 .btn:active,
 .btn:focus{
-    transition: color 0.5s, transform 0.2s, background-color 0.2s;
     color: #F8F7F4;
     text-align: center;
     border: #F8F7F4 solid;
     border-width: 1px;
-    transition: color 0.5s, transform 0.2s, background-color 0.2s;
 }
 
 .btn:hover{
     background: #F8F7F4;
     color: #282828;
-    transition: .3s;
 }
 
 .presentation > .flex-fill{
@@ -272,27 +269,29 @@ hr{
 }
 
 /*dark mode*/
-.background-mode{
+.background-mode,
+.navbar-mode{
     background: #282828;
-    transition: 0.3s;
+    transition: .3s;
+}
+
+.navbar-mode,
+.nav-link-mode,
+.nav-link-mode:focus,
+.stats-mode,
+.nav-link-mode:hover{
+    color: #F8F7F4;
+    transition: .3s;
 }
 
 .navbar-mode{
-    background: #282828;
     box-shadow: 0 0 1rem #F8F7F4;
-    color: #F8F7F4;
-}
-
-.nav-link-mode,
-.nav-link-mode:focus,
-.stats-mode{
-    color: #F8F7F4;
+    transition: .3s;
 }
 
 .nav-link-mode:hover{
-    color: #F8F7F4;
     text-shadow: 0 0 1rem #F8F7F4;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 /* responsive */
