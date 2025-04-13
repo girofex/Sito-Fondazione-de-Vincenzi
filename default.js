@@ -77,3 +77,24 @@ function switchMode() {
 if(themeMode == "true"){
     switchMode();
 }
+
+//calcolo anni servizio
+function calcYears(birthday) {
+    var today = new Date();
+    var bd = new Date(today.getFullYear());
+    var years = today.getFullYear() - birthday.getFullYear();
+
+    if(today < bd)
+        years--;
+    
+    return years;
+}
+
+function updateYears(){
+    var birthday = new Date("1986");
+    var years = calcYears(birthday);
+    document.getElementById("years").innerHTML = years;
+}
+
+updateYears();
+setInterval(updateYears, 86400000);
