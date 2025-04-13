@@ -150,7 +150,6 @@ p{
     color: #F8F7F4;
     text-align: left;
     width: 100%;
-    height: 45rem;
     padding: 2rem;
 }
 
@@ -220,6 +219,12 @@ hr{
 .accordion-body,
 .accordion-body:focus{
     outline: #1B7B82 solid;
+}
+
+.highlight{
+    font-family: "Funnel Display", serif;
+    color: #2bc8ac;
+    font-weight: 700;
 }
 
 .footer{
