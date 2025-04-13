@@ -93,7 +93,7 @@ function calcYears(birthday) {
 function updateYears(){
     var birthday = new Date("1986");
     var years = calcYears(birthday);
-    document.querySelector("years").innerHTML = years;
+    document.getElementById("years").innerHTML = years;
 }
 
 updateYears();
